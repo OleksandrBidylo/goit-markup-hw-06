@@ -794,6 +794,7 @@ nav ul li a.header-studio::after {
   border: 1px solid #fff;
   border-radius: 4px;
   background-color: transparent;
+  color: #fff;
 }
 .footer-btn-sub {
   font-family: "Roboto", sans-serif;
