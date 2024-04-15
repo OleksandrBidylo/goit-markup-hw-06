@@ -798,6 +798,10 @@ nav ul li a.header-studio::after {
   background-color: transparent;
   color: #fff;
   padding: 8px 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer-btn-sub {
   font-family: "Roboto", sans-serif;
@@ -813,7 +817,7 @@ nav ul li a.header-studio::after {
   text-align: center;
   color: #fff;
 
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -843,4 +847,7 @@ nav ul li a.header-studio::after {
   line-height: 200%;
   letter-spacing: 0.04em;
   color: #fff;
+}
+
+.label-sub {
 }
