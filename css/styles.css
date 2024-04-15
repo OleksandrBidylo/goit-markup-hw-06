@@ -823,7 +823,6 @@ nav ul li a.header-studio::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
 }
 .footer-btn-sub:hover,
 .footer-btn-sub:focus,
@@ -840,6 +839,7 @@ nav ul li a.header-studio::after {
 
 .footer-sub-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .footer-input::placeholder {
