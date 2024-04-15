@@ -787,6 +787,8 @@ nav ul li a.header-studio::after {
 }
 
 .sub-form {
+  display: flex;
+  gap: 24px;
 }
 .footer-input {
   width: 264px;
@@ -825,12 +827,12 @@ nav ul li a.header-studio::after {
   background: #404bbf;
 }
 
-.sub-wrap {
+/* .sub-wrap {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .footer-sub-icon {
   fill: #fff;
