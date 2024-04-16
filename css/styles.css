@@ -675,11 +675,11 @@ nav ul li a.header-studio::after {
 }
 
 .modal-input:focus + .modal-svg {
-  fill: ##4d5ae5;
+  fill: #4d5ae5;
 }
 
 .modal-input:hover + .modal-svg {
-  fill: ##4d5ae5;
+  fill: #4d5ae5;
 }
 
 .modal-text {
