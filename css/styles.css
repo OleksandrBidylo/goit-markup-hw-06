@@ -15,9 +15,9 @@ body {
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -184,11 +184,11 @@ nav ul li a.header-studio::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 72px;
 
-  padding-top: 188px;
+  padding-bottom: 72px;
 
-  padding-bottom: 188px;
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -200,8 +200,8 @@ nav ul li a.header-studio::after {
   text-align: center;
   color: #fff;
   margin: 0 auto;
-  max-width: 496px;
-  margin-bottom: 48px;
+  max-width: 216px;
+  margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -225,9 +225,8 @@ nav ul li a.header-studio::after {
 .hero-btn:hover {
   background: #404bbf;
 }
+
 /* -----advantages------- */
-.advantages {
-}
 
 .visually-hidden {
   position: absolute;
@@ -304,9 +303,6 @@ nav ul li a.header-studio::after {
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
-}
-
-.team-image {
 }
 
 .team-subtitle {
@@ -527,7 +523,7 @@ nav ul li a.header-studio::after {
 }
 
 .adv-icn {
-  display: block;
+  display: none;
 }
 
 .soc-media {
@@ -729,7 +725,6 @@ nav ul li a.header-studio::after {
 
 .modal-imput-wrap {
   position: relative;
-  margin-bottom: 16px;
 }
 
 .check-text {
@@ -877,4 +872,1091 @@ nav ul li a.header-studio::after {
 }
 
 .label-sub {
+}
+/* ////////////////// */
+
+@media screen and (min-width: 768px) {
+  /* ---header----- */
+
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+  }
+
+  nav ul li a.header-studio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+  }
+
+  .header-address {
+    align-items: center;
+  }
+
+  .header-adress-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-address-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* -----hero------- */
+  .hero-section {
+    padding-top: 188px;
+
+    padding-bottom: 188px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    margin: 0 auto;
+    max-width: 496px;
+    margin-bottom: 48px;
+  }
+
+  .hero-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+  }
+
+  /* -----advantages------- */
+
+  .advantages-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .advantages-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .advantages-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  /* -----team--------- */
+
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .names-spec {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+
+  .team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    margin-bottom: 8px;
+  }
+
+  .team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  /* ------portfolio---------- */
+
+  .portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .portfolio-list {
+    flex-wrap: wrap;
+    display: flex;
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+
+  .portfolio-cover-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-cover-text {
+    position: absolute;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    padding: 40px 32px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio-image {
+  }
+
+  .items-wo-img {
+    padding: 32px 16px;
+
+    border-top: none;
+  }
+
+  .portfolio-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 8px;
+  }
+
+  .portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* -----footer------ */
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    display: flex;
+    margin-left: auto;
+
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .footer-logo-div {
+    margin-right: 120px;
+  }
+
+  .footer-logo .accent {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    display: flex;
+
+    max-width: 264px;
+  }
+  /* --------- */
+  .icon-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    gap: 24px;
+  }
+  .icon-item {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-link {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team-icon-item {
+    width: 40px;
+    height: 40px;
+  }
+
+  .img-border {
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8px;
+  }
+
+  .adv-icn {
+    display: none;
+  }
+
+  .soc-media {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .soc-media-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 16px;
+  }
+
+  .footer-icon-list {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+
+    gap: 16px;
+  }
+
+  /* /////modal hw5///// */
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-close-btn {
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    margin-left: auto;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    padding: 0;
+  }
+
+  .modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    padding-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .modal-input {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+
+    height: 40px;
+
+    font-size: 12px;
+
+    padding-left: 38px;
+  }
+
+  .modal-svg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .modal-text {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+
+    margin-bottom: 16px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+
+    padding: 8px 16px;
+
+    resize: none;
+  }
+
+  .label-form {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+
+    display: block;
+  }
+
+  .modal-field {
+    margin-bottom: 8px;
+  }
+
+  .privacy-field {
+    margin-bottom: 24px;
+  }
+
+  .modal-imput-wrap {
+    position: relative;
+  }
+
+  .check-text {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+
+    align-items: center;
+  }
+
+  .prpol {
+    margin-left: 0.25em;
+  }
+
+  .fakecheckbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+  }
+
+  .comment-field {
+    margin-bottom: 16px;
+  }
+
+  .submit-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+
+    margin-top: 24px;
+    display: block;
+  }
+
+  /* ///footer hw5///// */
+  .footer-sub {
+    margin-left: 80px;
+  }
+
+  .sub-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+
+  .sub-form {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-input {
+    width: 264px;
+    height: 40px;
+
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+  }
+  .footer-btn-sub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    min-width: 165px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-sub-icon {
+    margin-left: 16px;
+  }
+
+  .footer-input::placeholder {
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /* ---header----- */
+
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    position: relative;
+  }
+
+  nav ul li a.header-studio::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+
+    border-radius: 2px;
+  }
+
+  .header-address {
+    align-items: center;
+  }
+
+  .header-adress-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-adress-item {
+  }
+
+  .header-address-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* -----hero------- */
+  .hero-section {
+    padding-top: 188px;
+
+    padding-bottom: 188px;
+    max-width: 1440px;
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 48px;
+  }
+
+  /* -----advantages------- */
+
+  .advantages-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .advantages-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .advantages-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  /* -----team--------- */
+
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .names-spec {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+
+  .team-image {
+  }
+
+  .team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    margin-bottom: 8px;
+  }
+
+  .team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  /* ------portfolio---------- */
+
+  .portfolio {
+  }
+
+  .portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .portfolio-list {
+    flex-wrap: wrap;
+    display: flex;
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+
+  .portfolio-cover-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-cover-text {
+    position: absolute;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    padding: 40px 32px;
+
+    display: flex;
+    align-items: center;
+
+    transform: translateY(100%);
+  }
+
+  .portfolio-image {
+  }
+
+  .items-wo-img {
+    padding: 32px 16px;
+  }
+
+  .portfolio-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 8px;
+  }
+
+  .portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* -----footer------ */
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    display: flex;
+    margin-left: auto;
+
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .footer-logo-div {
+    margin-right: 120px;
+  }
+
+  .footer-logo .accent {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+  .footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    display: flex;
+
+    max-width: 264px;
+  }
+  /* --------- */
+  .icon-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    gap: 24px;
+  }
+  .icon-item {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-link {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team-icon-item {
+    width: 40px;
+    height: 40px;
+  }
+
+  .img-border {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8px;
+  }
+
+  .adv-icn {
+    display: block;
+  }
+
+  .soc-media {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .soc-media-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 16px;
+  }
+
+  .footer-icon-list {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+
+    gap: 16px;
+  }
+
+  /* /////modal hw5///// */
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding: 24px;
+
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-close-btn {
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    padding: 0;
+  }
+
+  .modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    padding-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .modal-form {
+  }
+  .modal-input {
+    display: block;
+    width: 100%;
+
+    height: 40px;
+
+    font-size: 12px;
+
+    padding-left: 38px;
+  }
+
+  .modal-svg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+  }
+
+  .modal-text {
+    display: block;
+    width: 100%;
+
+    margin-bottom: 16px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 117%;
+
+    padding: 8px 16px;
+  }
+
+  .label-form {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 117%;
+
+    display: block;
+  }
+
+  .modal-field {
+    margin-bottom: 8px;
+  }
+
+  .privacy-field {
+    margin-bottom: 24px;
+  }
+
+  .modal-imput-wrap {
+    position: relative;
+  }
+
+  .check-text {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+
+    align-items: center;
+  }
+
+  .prpol {
+    text-decoration: underline;
+    margin-left: 0.25em;
+  }
+
+  .fakecheckbox {
+    width: 16px;
+    height: 16px;
+
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .comment-field {
+    margin-bottom: 16px;
+  }
+
+  .accept-icon {
+  }
+
+  .submit-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 169px;
+    height: 56px;
+    margin-top: 24px;
+    display: block;
+  }
+
+  /* ///footer hw5///// */
+  .footer-sub {
+    margin-left: 80px;
+  }
+
+  .sub-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+
+  .sub-form {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-input {
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+  }
+  .footer-btn-sub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-sub-icon {
+    margin-left: 16px;
+  }
+
+  .footer-input::placeholder {
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+  }
 }
